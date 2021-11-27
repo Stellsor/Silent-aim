@@ -39,8 +39,8 @@ getgenv().Aiming = {
     Enabled = true,
 
     ShowFOV = false,
-    FOV = 112,
-    FOVSides = 224,
+    FOV = 100,
+    FOVSides = 24,
     FOVColour = Color3fromRGB(0,0,0),
 
     VisibleCheck = true,
@@ -52,24 +52,13 @@ getgenv().Aiming = {
 
     TargetPart = {"Head", "HumanoidRootPart", "Uppertorso", "Lowertorso"},
 
-    Ignored = {
-        Teams = {
-            {
-                Team = LocalPlayer.Team,
-                TeamColor = LocalPlayer.TeamColor,
-            },
-        },
-        Players = {
-            LocalPlayer,
-            91318356
-        }
-    }
-}
+    Ignored = false
+      
 local Aiming = getgenv().Aiming
 
 -- // Create circle
 local circle = Drawingnew("Circle")
-circle.Transparency = 0
+circle.Transparency = 1
 circle.Thickness = 2
 circle.Color = Aiming.FOVColour
 circle.Filled = false
