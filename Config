@@ -464,3 +464,10 @@ __index = hookmetamethod(game, "__index", function(t, k)
     return __index(t, k)
 end)
 ]]--
+
+game.StarterGui:SetCore(
+    "SendNotification",
+    {
+	Title = "Stellsor",
+	Text = "EZ SILENT AIM",
+	Icon = "rbxthumb://type=Asset&id=166457378&w=150&h=150"
