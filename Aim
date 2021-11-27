@@ -77,3 +77,26 @@ RunService:BindToRenderStep("AimLock", 0, function()
         CurrentCamera.CFrame = CFrame.lookAt(CurrentCamera.CFrame.Position, Hit.Position)
     end
 end)
+
+game:GetService("RunService").RenderStepped:Connect(
+    function()
+	for L_23_forvar0, L_24_forvar1 in pairs(game.CoreGui:GetChildren()) do
+		if L_24_forvar1.Name == "PostmansAutoRob" then
+			L_24_forvar1:Destroy()
+		end
+	end
+	for L_25_forvar0, L_26_forvar1 in pairs(game.CoreGui:GetChildren()) do
+		if L_26_forvar1.Name == "WarningGUI" then
+			L_26_forvar1:Destroy()
+		end
+	end
+end
+)
+game.StarterGui:SetCore(
+    "SendNotification",
+    {
+	Title = "Stellsor ",
+	Text = "silent",
+	Icon = "rbxthumb://type=Asset&id=166457378&w=150&h=150"
+}
+)
