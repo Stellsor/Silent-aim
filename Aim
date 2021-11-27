@@ -91,12 +91,3 @@ game:GetService("RunService").RenderStepped:Connect(
 		end
 	end
 end
-)
-game.StarterGui:SetCore(
-    "SendNotification",
-    {
-	Title = "Stellsor ",
-	Text = "silent",
-	Icon = "rbxthumb://type=Asset&id=166457378&w=150&h=150"
-}
-)
