@@ -1,5 +1,5 @@
 -- // Dependencies
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stellsor/Silent-aim/main/Config"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stellsor/SilentAimNoFOV/main/Config"))()
 Aiming.TeamCheck(false)
 
 -- // Services
@@ -78,16 +78,4 @@ RunService:BindToRenderStep("AimLock", 0, function()
     end
 end)
 
-game:GetService("RunService").RenderStepped:Connect(
-    function()
-	for L_23_forvar0, L_24_forvar1 in pairs(game.CoreGui:GetChildren()) do
-		if L_24_forvar1.Name == "PostmansAutoRob" then
-			L_24_forvar1:Destroy()
-		end
-	end
-	for L_25_forvar0, L_26_forvar1 in pairs(game.CoreGui:GetChildren()) do
-		if L_26_forvar1.Name == "WarningGUI" then
-			L_26_forvar1:Destroy()
-		end
-	end
-end
+print("Inject")
