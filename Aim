@@ -1,5 +1,5 @@
 -- // Dependencies
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stellsor/SilentAimNoFOV/main/Config"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stellsor/Silent-aim/main/Config"))()
 Aiming.TeamCheck(false)
 
 -- // Services
