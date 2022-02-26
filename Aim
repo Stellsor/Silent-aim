@@ -15,7 +15,7 @@ local CurrentCamera = Workspace.CurrentCamera
 
 local DaHoodSettings = {
     SilentAim = true,
-    AimLock = true,
+    AimLock = false,
     Prediction = 0.165,
     AimLockKeybind = Enum.KeyCode.T
 }
@@ -78,4 +78,3 @@ RunService:BindToRenderStep("AimLock", 0, function()
     end
 end)
 
-print("Inject")
